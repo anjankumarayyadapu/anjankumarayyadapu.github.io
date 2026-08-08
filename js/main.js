@@ -5,8 +5,15 @@ const viewLinks = document.querySelectorAll(".nav-link-view");
 const pageViews = document.querySelectorAll(".page-view");
 const defaultView = "home";
 
+function normalizeViewId(viewId) {
+  if (viewId === "skills") {
+    return "experience";
+  }
+  return viewId;
+}
+
 function setActiveView(viewId) {
-  const target = viewId || defaultView;
+  const target = normalizeViewId(viewId) || defaultView;
 
   pageViews.forEach((section) => {
     const isActive = section.dataset.view === target;
@@ -48,7 +55,8 @@ if (navToggle && navLinks) {
   });
 }
 
-const initialView = location.hash.replace("#", "") || defaultView;
+const rawInitialView = location.hash.replace("#", "");
+const initialView = normalizeViewId(rawInitialView) || defaultView;
 const hasInitialView = Array.from(pageViews).some(
   (section) => section.dataset.view === initialView
 );
