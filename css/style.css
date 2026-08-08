@@ -545,51 +545,6 @@ h2 {
   margin-bottom: 0.35rem;
 }
 
-.membership-icon-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
-  gap: 0.85rem;
-  margin-bottom: 2.5rem;
-}
-
-.membership-icon-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.65rem;
-  min-height: 100%;
-  padding: 1rem 0.65rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface);
-  color: var(--text);
-  text-align: center;
-  text-decoration: none;
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.membership-icon-card:hover {
-  transform: translateY(-2px);
-  border-color: rgba(56, 189, 248, 0.35);
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
-  color: var(--text);
-}
-
-.membership-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  object-fit: contain;
-  background: #fff;
-  padding: 4px;
-}
-
-.membership-icon-label {
-  font-size: 0.78rem;
-  font-weight: 600;
-  line-height: 1.35;
-}
-
 .credly-panel {
   margin-top: 2.5rem;
   padding: 1.5rem;
@@ -1228,7 +1183,6 @@ a.media-preview-item:hover .media-preview-card {
   .contact-grid,
   .books-grid,
   .membership-grid,
-  .membership-icon-grid,
   .articles-grid {
     grid-template-columns: 1fr;
   }
