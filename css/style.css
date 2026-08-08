@@ -168,45 +168,10 @@ img {
   position: relative;
   overflow: hidden;
   padding: 5rem 0 4rem;
-  background: var(--bg);
-}
-
-.hero-backdrop {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.hero-backdrop-image {
-  position: absolute;
-  top: 50%;
-  right: clamp(1rem, 6vw, 5rem);
-  width: min(36vw, 420px);
-  max-height: min(78vh, 560px);
-  height: auto;
-  aspect-ratio: 1284 / 1531;
-  object-fit: cover;
-  object-position: center 6%;
-  transform: translateY(-50%);
-  opacity: 0.34;
-  border-radius: calc(var(--radius) + 8px);
-  mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.55) 72%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.55) 72%, transparent 100%);
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
   background:
-    linear-gradient(
-      105deg,
-      rgba(11, 17, 32, 0.98) 0%,
-      rgba(11, 17, 32, 0.94) 48%,
-      rgba(11, 17, 32, 0.82) 72%,
-      rgba(11, 17, 32, 0.62) 100%
-    ),
-    radial-gradient(circle at 82% 38%, rgba(56, 189, 248, 0.08), transparent 42%);
+    radial-gradient(circle at top right, rgba(56, 189, 248, 0.16), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(14, 165, 233, 0.08), transparent 25%),
+    var(--bg);
 }
 
 .hero-grid {
@@ -224,12 +189,10 @@ img {
   justify-self: end;
 }
 
-.hero-photo-wrap,
-.profile-photo-wrap {
-  padding: 0.35rem;
-  border-radius: calc(var(--radius) + 4px);
-  background: linear-gradient(135deg, rgba(56, 189, 248, 0.45), rgba(14, 165, 233, 0.12));
-  box-shadow: var(--shadow);
+.hero-side .profile-photo-wrap {
+  width: 100%;
+  max-width: 320px;
+  justify-self: center;
 }
 
 .hero-photo,
@@ -238,7 +201,7 @@ img {
   max-width: 320px;
   aspect-ratio: 1;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center 8%;
   border-radius: var(--radius);
   border: 1px solid var(--border);
 }
@@ -253,6 +216,14 @@ img {
 .about-intro .profile-photo-wrap {
   max-width: 280px;
   margin-bottom: 1.5rem;
+}
+
+.profile-photo-wrap,
+.hero-photo-wrap {
+  padding: 0.35rem;
+  border-radius: calc(var(--radius) + 4px);
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.45), rgba(14, 165, 233, 0.12));
+  box-shadow: var(--shadow);
 }
 
 .about-intro h2 {
@@ -721,25 +692,9 @@ h2 {
     justify-self: stretch;
   }
 
-  .hero-overlay {
-    background:
-      linear-gradient(
-        180deg,
-        rgba(11, 17, 32, 0.94) 0%,
-        rgba(11, 17, 32, 0.88) 55%,
-        rgba(11, 17, 32, 0.72) 100%
-      ),
-      radial-gradient(circle at top right, rgba(56, 189, 248, 0.12), transparent 35%);
-  }
-
-  .hero-backdrop-image {
-    right: 50%;
-    width: min(72vw, 320px);
-    max-height: 52vh;
-    transform: translate(50%, -50%);
-    opacity: 0.24;
-    mask-image: none;
-    -webkit-mask-image: none;
+  .hero-side .profile-photo-wrap {
+    max-width: 280px;
+    margin-inline: auto;
   }
 
   .about-intro .profile-photo-wrap {
