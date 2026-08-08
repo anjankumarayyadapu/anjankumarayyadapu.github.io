@@ -187,12 +187,12 @@ img {
   background:
     linear-gradient(
       105deg,
-      rgba(11, 17, 32, 0.96) 0%,
-      rgba(11, 17, 32, 0.9) 38%,
-      rgba(11, 17, 32, 0.62) 62%,
-      rgba(11, 17, 32, 0.35) 100%
+      rgba(11, 17, 32, 0.97) 0%,
+      rgba(11, 17, 32, 0.93) 42%,
+      rgba(11, 17, 32, 0.78) 68%,
+      rgba(11, 17, 32, 0.55) 100%
     ),
-    radial-gradient(circle at top right, rgba(56, 189, 248, 0.14), transparent 35%);
+    radial-gradient(circle at top right, rgba(56, 189, 248, 0.1), transparent 35%);
 }
 
 .hero-grid {
