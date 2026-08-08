@@ -654,6 +654,10 @@ h2 {
   max-width: none;
 }
 
+.event-card + .event-card {
+  margin-top: 2rem;
+}
+
 .event-card h3 {
   margin: 0 0 0.75rem;
   font-size: 1.35rem;
