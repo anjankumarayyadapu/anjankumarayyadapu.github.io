@@ -11,6 +11,7 @@
   <meta property="og:url" content="https://anjan-kumar-ayyadapu.com/">
   <meta property="og:image" content="https://anjan-kumar-ayyadapu.com/assets/img/profile.jpg">
   <link rel="canonical" href="https://anjan-kumar-ayyadapu.com/">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <title>Anjan Kumar Ayyadapu | Senior Solution Architect</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +41,16 @@
 
   <main id="top">
     <section id="home" class="hero page-view page-view-active" data-view="home">
-      <div class="hero-backdrop" aria-hidden="true"></div>
+      <div class="hero-backdrop" aria-hidden="true">
+        <img
+          src="assets/img/profile.jpg"
+          alt=""
+          class="hero-backdrop-image"
+          width="1284"
+          height="1531"
+          loading="eager"
+        >
+      </div>
       <div class="hero-overlay" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-content">
@@ -175,22 +185,26 @@
     <section id="experience" class="section page-view" data-view="experience">
       <div class="container">
         <h2>Experience</h2>
-        <p class="section-intro">18+ years across solution architecture, Big Data platforms, cloud engineering, and enterprise operations.</p>
+        <p class="section-intro">18+ years across solution architecture, Big Data platforms, cloud engineering, DevOps, and enterprise operations.</p>
         <div class="timeline">
           <article class="timeline-item">
             <div class="timeline-marker"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Leader Solution Architect</h3>
+                <h3>Senior Solution Architect</h3>
                 <span class="timeline-date">Apr 2022 – Present</span>
               </div>
               <p class="timeline-org">Cloudera Inc. · McLean, VA</p>
               <ul>
-                <li>Lead customer engagements for Big Data architecture, CDP deployments, and Edge-to-AI solutions.</li>
-                <li>Design and implement multi-node Hadoop clusters, CDH-to-CDP upgrades, and CML/CDE/CDF services.</li>
-                <li>Partner with customer technical teams and Cloudera field engineering on complex production deployments.</li>
-                <li>Document and present architectures for executive and engineering stakeholders.</li>
-                <li>Participate in pre- and post-sales activities and drive projects to successful completion.</li>
+                <li>Work directly with customer technical teams to design Big Data architectures, CDP deployments, CML/CDE/CDF services, and Edge-to-AI solutions.</li>
+                <li>Lead enterprise post-sales architecture from onboarding and solution planning through production deployment, optimization, and platform growth.</li>
+                <li>Architect open lakehouse solutions on Apache Iceberg with interoperability across analytics platforms and Databricks workloads on AWS.</li>
+                <li>Manage Spark modernization initiatives and improve query performance by up to 60% through compute, partitioning, and shuffle optimization.</li>
+                <li>Built an automated Python capacity planning tool for CDP Data Services that reduced planning effort by 90% for customers and Professional Services.</li>
+                <li>Install and administer multi-node Hadoop clusters, CDH-to-CDP upgrades, and Kubernetes-based CDP data service implementations.</li>
+                <li>Act as technical liaison across Engineering, Product, Support, and Professional Services for escalations, security remediation, and product feedback.</li>
+                <li>Develop implementation guides, runbooks, and automation utilities that accelerate adoption and reduce deployment complexity.</li>
+                <li>Code Award for Commitment (2024) — recognized for prioritizing data-driven customer outcomes.</li>
               </ul>
             </div>
           </article>
@@ -198,16 +212,19 @@
             <div class="timeline-marker"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Cloud Support Engineer II — Big Data Specialist</h3>
+                <h3>Cloud Support Engineer II — Big Data Specialist (EMR)</h3>
                 <span class="timeline-date">Apr 2021 – Apr 2022</span>
               </div>
               <p class="timeline-org">Amazon Web Services</p>
               <ul>
-                <li>Supported escalated customer issues across EMR, Glue, SageMaker, DynamoDB, Athena, and Hadoop workloads.</li>
-                <li>Delivered cloud migration strategies and built automated pipelines with Glue, Lambda, S3, and Redshift.</li>
-                <li>Led a major GSE cloud migration achieving 30% cost reduction and real-time analytics capabilities.</li>
-                <li>Developed troubleshooting workflows, tutorials, and internal tooling for global support teams.</li>
-                <li>Optimized MapReduce, HDFS, Spark, and HBase performance using advanced diagnostics and Java analysis.</li>
+                <li>Supported escalated customer issues across EMR, Glue, SageMaker, DynamoDB, Athena, Personalize, and Hadoop architectures.</li>
+                <li>Provided proactive guidance on blockchain, machine learning, and Big Data frameworks within distributed Spark and Hive environments.</li>
+                <li>Developed troubleshooting workflows, tutorials, how-to videos, and knowledge base articles for the AWS customer community.</li>
+                <li>Deployed cloud applications using Python, PowerShell, JSON/YAML, and internal AWS tooling for complex production diagnostics.</li>
+                <li>Acted as liaison between service development and support engineering teams, leading tech sync meetings to relay customer feedback.</li>
+                <li>Optimized MapReduce, HDFS, Spark, and HBase performance using advanced troubleshooting and Java code analysis.</li>
+                <li>Performed network troubleshooting using TCP/IP, DNS, DHCP, firewalls, routing, traceroute, iPerf, dig, and cURL.</li>
+                <li>Built internal software applications for global engineering teams to improve end-to-end service support operations.</li>
               </ul>
             </div>
           </article>
@@ -220,11 +237,13 @@
               </div>
               <p class="timeline-org">XScion Solutions LLC · Virginia</p>
               <ul>
-                <li>Led a distributed team of Data Engineers, DataOps Engineers, and DevOps Engineers across multiple regions.</li>
-                <li>Migrated on-premises data centers to AWS and GCP with Terraform, Puppet, Chef, and data pipelines.</li>
-                <li>Administered HDP/HDF (NiFi) clusters with Ranger, Kerberos, SSL, and Apache Ambari lifecycle management.</li>
-                <li>Built POCs on Hortonworks and recommended best practices for HDP, HDF, and NiFi platforms.</li>
-                <li>Deployed Cloudbreak and GKE/EKS environments for hybrid and cloud-native data platform delivery.</li>
+                <li>Led a diverse team of Data Engineers, DataOps Engineers, and DevOps Engineers across multiple geographic locations.</li>
+                <li>Migrated data and services from on-premises data centers to AWS and GCP using Puppet, Chef, and data pipelines.</li>
+                <li>Applied OS and Hadoop patches and upgraded clusters to the latest HDP versions, including Ambari and ecosystem components.</li>
+                <li>Managed HDP and HDF (NiFi) clusters with Apache Ranger, Kerberos, SSL certificates, and REST API automation.</li>
+                <li>Deployed Cloudbreak on AWS and administered RDBMS/NoSQL clusters in AWS VPC environments.</li>
+                <li>Installed fully distributed Hadoop clusters with rack awareness, Oozie workflows, and HBase major compactions.</li>
+                <li>Deployed GKE and EKS environments for containerized data platform delivery.</li>
               </ul>
             </div>
           </article>
@@ -238,10 +257,12 @@
               <p class="timeline-org">XScion Solutions LLC · Virginia</p>
               <ul>
                 <li>Installed and configured Hortonworks Data Platform 2.5, 2.6.4, and 3.0 on-premises and in AWS VPC.</li>
-                <li>Led cluster capacity planning, performance tuning, security hardening, and major HDP upgrades.</li>
-                <li>Resolved production issues across Hive Metastore, Ambari Metrics, Ranger-Solr, Kafka, Storm, and HBase.</li>
-                <li>Designed connectivity products for efficient data exchange between RDBMS engines and Hadoop.</li>
-                <li>Delivered DataOps POCs with product and engineering teams for enterprise platform tooling.</li>
+                <li>Designed connectivity products for efficient data exchange between RDBMS engines and the Hadoop ecosystem.</li>
+                <li>Led cluster capacity planning, hardware planning, performance tuning, and major HDP upgrades.</li>
+                <li>Resolved production issues across Hive Metastore, Ambari Metrics, Ranger-Solr, Kafka, Storm, SSL/TLS, and HBase.</li>
+                <li>Configured load balancers, auto scaling, JDBC/SSL for PostgreSQL, Ambari-LDAP sync, and Kerberized clusters.</li>
+                <li>Improved HBase file locality and resolved region server failures during HDP upgrades from 2.3.2 to 2.6.4.</li>
+                <li>Delivered DataOps POCs with product and engineering teams. [X]ceptional xScioneer Award &amp; Spot xScioneer Award.</li>
               </ul>
             </div>
           </article>
@@ -255,10 +276,11 @@
               <p class="timeline-org">Tusker Solutions · Client: Apple · California</p>
               <ul>
                 <li>Installed, upgraded, and managed 300+ node Hadoop clusters on CDH with Cloudera Manager and Nagios.</li>
+                <li>Provided integration support for Splunk, Netezza, Teradata, and other RDBMS platforms.</li>
                 <li>Deployed Hadoop on-premises, Amazon EC2, and Rackspace OpenStack with Kerberos security.</li>
-                <li>Migrated data with DistCp and imported Teradata and Oracle data using Sqoop.</li>
-                <li>Built Flume pipelines, Pig/Hive/Oozie workflows, and BI connectivity to HiveServer.</li>
-                <li>Provided Level 2 support, runbooks, automated onboarding, and application capacity planning.</li>
+                <li>Built Flume pipelines, Pig/Hive/Oozie workflows, DistCp migrations, and Sqoop imports from Teradata and Oracle.</li>
+                <li>Acted as Level 2 support with runbooks, automated onboarding/offboarding, and application capacity planning.</li>
+                <li>Performed CDH and OS upgrades, cluster monitoring with Ganglia/Nagios, and BI connectivity to HiveServer.</li>
               </ul>
             </div>
           </article>
@@ -271,10 +293,10 @@
               </div>
               <p class="timeline-org">IBM · Pune, India</p>
               <ul>
-                <li>Managed staffing and deployment for 100+ SAP-skilled consultants across client engagements.</li>
-                <li>Led end-to-end data delivery for five applications supporting ibm.com and Lenovo.com product/pricing feeds.</li>
-                <li>Coordinated 14 teams across AP, EMEA, and NA to meet SLAs and data integrity requirements.</li>
-                <li>Prepared utilization forecasts, contribution reports, and executive dashboards for leadership.</li>
+                <li>Staffed and deployed 100+ SAP-skilled IBM consultants with monthly utilization forecasting and contribution reporting.</li>
+                <li>Led end-to-end data delivery for five applications supporting ibm.com and Lenovo.com product and pricing catalogs.</li>
+                <li>Managed operations across 14 teams in AP, EMEA, and NA while meeting SLAs and data integrity requirements.</li>
+                <li>Verified dashboards and scorecards for executive reporting on daily feed status and large-volume data delivery.</li>
               </ul>
             </div>
           </article>
@@ -287,11 +309,11 @@
               </div>
               <p class="timeline-org">IBM · Pune, India</p>
               <ul>
-                <li>Installed and configured CDH3/CDH4 ecosystems, Cloudera Manager, Hive, Pig, MapReduce, and HBase.</li>
-                <li>Developed MapReduce jobs in Java and Pig Latin scripts for terabyte-scale data processing.</li>
-                <li>Implemented HBase coprocessors, Avro serialization, and ZooKeeper-based cluster coordination.</li>
-                <li>Worked with IBM DB2 Warehouse Edition, SQL Server Integration Services, and WebSphere DataStage ETL.</li>
-                <li>Recognized with Deutsche Bank Best Performer awards (2010, 2011) and IBM excellence honors.</li>
+                <li>Installed and configured CDH3/CDH4, Cloudera Manager, Hive, Pig, MapReduce, HBase, and ZooKeeper clusters.</li>
+                <li>Developed MapReduce jobs in Java and Pig Latin scripts for terabyte-scale structured and unstructured data processing.</li>
+                <li>Implemented HBase coprocessors, Avro serialization, and sequence file processing for small-file optimization.</li>
+                <li>Worked with IBM DB2 Warehouse Edition, SQL Server Integration Services, and WebSphere DataStage ETL pipelines.</li>
+                <li>Best Performer awards from Deutsche Bank (2010, 2011) and IBM Best Performer &amp; Coordinator (2010, 2011).</li>
               </ul>
             </div>
           </article>
@@ -304,9 +326,9 @@
               </div>
               <p class="timeline-org">Wipro · Bangalore, India</p>
               <ul>
-                <li>Built and maintained Linux and Solaris servers including kernel compile, patch, and upgrade cycles.</li>
-                <li>Configured Jumpstart deployments, Apache web hosting, networking, backup, and user management.</li>
-                <li>Recommended system configurations and resolved production issues from alerts and user escalations.</li>
+                <li>Built Linux servers, applied patches, compiled kernels, and managed CentOS and Red Hat environments.</li>
+                <li>Configured Solaris Jumpstart servers, Apache hosting, networking, backup, and user management.</li>
+                <li>Performed disk partitioning, file system reorganization, log maintenance, and production issue resolution.</li>
               </ul>
             </div>
           </article>
