@@ -617,6 +617,22 @@ h2 {
   line-height: 1.6;
 }
 
+.book-card code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.88em;
+  color: var(--accent);
+}
+
+.featured-blog-card {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 901px) {
+  .featured-blog-card {
+    max-width: none;
+  }
+}
+
 .book-links {
   display: flex;
   flex-wrap: wrap;
