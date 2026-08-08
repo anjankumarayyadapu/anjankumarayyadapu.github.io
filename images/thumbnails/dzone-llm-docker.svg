@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="DZone article thumbnail">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg1)"/>
+  <rect x="48" y="48" width="120" height="120" rx="16" fill="#2496ed" opacity="0.9"/>
+  <rect x="190" y="72" width="88" height="88" rx="12" fill="#326ce5" opacity="0.85"/>
+  <text x="48" y="220" fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">LLMs · Docker · Kubernetes</text>
+  <text x="48" y="258" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="18">DZone Article</text>
+</svg>

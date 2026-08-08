@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="DZone article thumbnail">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg2)"/>
+  <circle cx="110" cy="120" r="56" fill="#fb923c" opacity="0.85"/>
+  <rect x="190" y="78" width="150" height="18" rx="9" fill="#fed7aa"/>
+  <rect x="190" y="112" width="210" height="18" rx="9" fill="#fdba74"/>
+  <rect x="190" y="146" width="180" height="18" rx="9" fill="#fb923c"/>
+  <text x="48" y="220" fill="#fff7ed" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">PySpark · LLMs · Cloudera</text>
+  <text x="48" y="258" fill="#ffedd5" font-family="Inter, Arial, sans-serif" font-size="18">DZone Article</text>
+</svg>

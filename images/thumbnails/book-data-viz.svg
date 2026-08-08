@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 420" role="img" aria-label="Book cover placeholder">
+  <defs>
+    <linearGradient id="bookbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="420" rx="8" fill="url(#bookbg)"/>
+  <rect x="24" y="36" width="272" height="4" fill="#7dd3fc"/>
+  <rect x="24" y="56" width="220" height="4" fill="#bae6fd"/>
+  <text x="24" y="130" fill="#e0f2fe" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Data Visualization</text>
+  <text x="24" y="158" fill="#e0f2fe" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">and Interpretation</text>
+  <text x="24" y="186" fill="#e0f2fe" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Using ML</text>
+  <text x="24" y="360" fill="#7dd3fc" font-family="Inter, Arial, sans-serif" font-size="14">ISBN 978-81-19534-64-7</text>
+</svg>

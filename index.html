@@ -460,7 +460,9 @@
 
         <h3 class="subsection-title">Books</h3>
         <div class="books-grid">
-          <article class="book-card">
+          <article class="book-card book-card-media">
+            <img class="book-cover" src="images/thumbnails/book-data-viz.svg" alt="Cover — Data Visualization and Interpretation Using Machine Learning" loading="lazy" width="320" height="420">
+            <div class="book-card-body">
             <span class="book-date">Apr 2024</span>
             <h4>Data Visualization and Interpretation Using Machine Learning</h4>
             <p class="book-meta">Co-authored with Niyati Bhat, Dr. Anil Kumar, and Dr. S.A. Sivasankari · Xoffencer International Publication · April 2024 · ISBN 978-81-19534-64-7</p>
@@ -471,8 +473,11 @@
               <a href="https://www.amazon.in/s?k=9788119534647" target="_blank" rel="noopener noreferrer">Amazon</a>
               <a href="https://xoffencerpublication.in/" target="_blank" rel="noopener noreferrer">Publisher</a>
             </div>
+            </div>
           </article>
-          <article class="book-card">
+          <article class="book-card book-card-media">
+            <img class="book-cover" src="images/thumbnails/book-embedded.jpeg" alt="Cover — Embedded Software Development" loading="lazy" width="1600" height="1200">
+            <div class="book-card-body">
             <span class="book-date">May 2024</span>
             <h4>Embedded Software Development</h4>
             <p class="book-meta">Co-authored with Dr. Mohammad Ahmar Khan, Dr. Kusuma Rajasekhar, and Davinder Kumar · May 2024 · ISBN 978-81-973645-2-5</p>
@@ -482,6 +487,7 @@
               <a href="https://zenodo.org/records/11350293" target="_blank" rel="noopener noreferrer">Download</a>
               <a href="https://www.google.com/search?tbm=bks&amp;q=isbn:9788197364525" target="_blank" rel="noopener noreferrer">Google Books</a>
               <a href="https://www.amazon.in/s?k=9788197364525" target="_blank" rel="noopener noreferrer">Amazon</a>
+            </div>
             </div>
           </article>
         </div>
@@ -495,7 +501,10 @@
 
         <h3 class="subsection-title">Featured</h3>
         <div class="books-grid">
-          <article class="book-card featured-blog-card">
+          <article class="book-card featured-blog-card media-card">
+            <div class="card-media card-media-wide">
+              <img src="images/thumbnails/dev-docker-tips.jpg" alt="Seven Docker Tips Every Engineer Should Know — DEV article cover" loading="lazy" width="900" height="600">
+            </div>
             <span class="book-date">May 2025</span>
             <h4>Seven Docker Tips Every Engineer Should Know (from Docker Captains)</h4>
             <p class="book-meta">Docker Captain feature · Tip #6: Use .dockerignore · Docker Inc</p>
@@ -514,20 +523,35 @@
 
         <h3 class="subsection-title">DZone</h3>
         <div class="articles-grid">
-          <a class="article-card" href="https://dzone.com/articles/llm-deployment-docker-kubernetes" target="_blank" rel="noopener noreferrer">
+          <a class="article-card article-card-media" href="https://dzone.com/articles/llm-deployment-docker-kubernetes" target="_blank" rel="noopener noreferrer">
+            <div class="card-media">
+              <img src="images/thumbnails/dzone-llm-docker.svg" alt="Containerized Intelligence — DZone article thumbnail" loading="lazy" width="640" height="360">
+            </div>
+            <div class="card-body">
             <span class="article-date">Aug 2025</span>
             <h4>Containerized Intelligence: Running LLMs at Scale Using Docker and Kubernetes</h4>
             <p>Deploy powerful LLMs using Docker and Kubernetes — scale with GPUs, fine-tune models, and automate inference workloads.</p>
+            </div>
           </a>
-          <a class="article-card" href="https://dzone.com/articles/generating-pyspark-sql-jobs-llms-cloudera" target="_blank" rel="noopener noreferrer">
+          <a class="article-card article-card-media" href="https://dzone.com/articles/generating-pyspark-sql-jobs-llms-cloudera" target="_blank" rel="noopener noreferrer">
+            <div class="card-media">
+              <img src="images/thumbnails/dzone-pyspark.svg" alt="Automating Data Pipelines — DZone article thumbnail" loading="lazy" width="640" height="360">
+            </div>
+            <div class="card-body">
             <span class="article-date">May 2025</span>
             <h4>Automating Data Pipelines: Generating PySpark and SQL Jobs With LLMs in Cloudera</h4>
             <p>Use LLMs in Cloudera to convert natural language into PySpark or SQL, run pipelines with CDE, and manage governed data with Iceberg and SDX.</p>
+            </div>
           </a>
-          <a class="article-card" href="https://dzone.com/articles/unlock-genai-potential-gemma-3-docker" target="_blank" rel="noopener noreferrer">
+          <a class="article-card article-card-media" href="https://dzone.com/articles/unlock-genai-potential-gemma-3-docker" target="_blank" rel="noopener noreferrer">
+            <div class="card-media">
+              <img src="images/thumbnails/dzone-gemma.svg" alt="Gemma 3 Docker Model Runner — DZone article thumbnail" loading="lazy" width="640" height="360">
+            </div>
+            <div class="card-body">
             <span class="article-date">Apr 2025</span>
             <h4>Gemma 3: Unlocking GenAI Potential Using Docker Model Runner</h4>
             <p>Run Gemma 3 locally using Docker Model Runner for private, efficient GenAI development with fast setup and offline inference.</p>
+            </div>
           </a>
         </div>
 
@@ -590,6 +614,22 @@
                 </svg>
               </span>
             </button>
+          </div>
+
+          <div class="media-preview-grid" aria-label="TeqTalk episode on other platforms">
+            <a class="media-preview-card" href="https://open.spotify.com/episode/4jvX62goNjDM3ZshPx30Xz?si=8bd5aaca5f91446a" target="_blank" rel="noopener noreferrer">
+              <img src="images/thumbnails/teqtalk-spotify.jpg" alt="TeqTalk episode on Spotify" loading="lazy" width="640" height="360">
+              <span class="media-preview-label">Listen on Spotify</span>
+            </a>
+            <a class="media-preview-card media-preview-square" href="https://podcasts.apple.com/us/podcast/episode-42-the-missing-link-between-ai-engineering/id1741536787?i=1000722975739" target="_blank" rel="noopener noreferrer">
+              <img src="images/thumbnails/teqtalk-apple.jpg" alt="TeqTalk episode on Apple Podcasts" loading="lazy" width="600" height="600">
+              <span class="media-preview-label">Apple Podcasts</span>
+            </a>
+            <a class="media-preview-card media-preview-portrait media-preview-video" href="https://www.linkedin.com/posts/teqtalk_aiprojects-dataops-dataengineering-ugcPost-7365737373403361283-TJVD" target="_blank" rel="noopener noreferrer">
+              <img src="images/thumbnails/teqtalk-linkedin-clip.jpg" alt="TeqTalk data readiness clip on LinkedIn" loading="lazy" width="720" height="1280">
+              <span class="media-preview-play-badge" aria-hidden="true">▶</span>
+              <span class="media-preview-label">Data readiness clip</span>
+            </a>
           </div>
 
           <div class="book-links">
