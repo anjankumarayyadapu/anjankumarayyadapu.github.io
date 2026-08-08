@@ -125,11 +125,13 @@ img {
 .hero.page-view-active {
   min-height: calc(100vh - 4.5rem);
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.hero.page-view-active .hero-grid {
-  width: 100%;
+.hero.page-view-active > .container {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin-inline: auto;
 }
 
 @keyframes fadeIn {
@@ -178,6 +180,14 @@ img {
 .hero-side {
   display: grid;
   gap: 1.25rem;
+  max-width: 360px;
+  width: 100%;
+  justify-self: end;
+}
+
+.hero-side .profile-photo-wrap {
+  max-width: 320px;
+  width: 100%;
 }
 
 .hero-photo-wrap,
@@ -191,8 +201,10 @@ img {
 .hero-photo,
 .profile-photo {
   width: 100%;
+  max-width: 320px;
   aspect-ratio: 1;
   object-fit: cover;
+  object-position: center 20%;
   border-radius: var(--radius);
   border: 1px solid var(--border);
 }
@@ -667,6 +679,16 @@ h2 {
   .contact-grid,
   .articles-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-side {
+    max-width: none;
+    justify-self: stretch;
+  }
+
+  .hero-side .profile-photo-wrap {
+    max-width: 280px;
+    margin-inline: auto;
   }
 
   .about-intro .profile-photo-wrap {
