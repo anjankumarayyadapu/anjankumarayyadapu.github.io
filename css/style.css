@@ -132,6 +132,8 @@ img {
 .hero.page-view-active > .container {
   width: min(calc(100% - 2rem), var(--max-width));
   margin-inline: auto;
+  position: relative;
+  z-index: 1;
 }
 
 @keyframes fadeIn {
@@ -163,18 +165,41 @@ img {
 }
 
 .hero {
+  position: relative;
+  overflow: hidden;
   padding: 5rem 0 4rem;
+  background: var(--bg);
+}
+
+.hero-backdrop {
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/img/profile.jpg");
+  background-size: cover;
+  background-position: center 18%;
+  background-repeat: no-repeat;
+  transform: scale(1.04);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
   background:
-    radial-gradient(circle at top right, rgba(56, 189, 248, 0.16), transparent 30%),
-    radial-gradient(circle at bottom left, rgba(14, 165, 233, 0.08), transparent 25%),
-    var(--bg);
+    linear-gradient(
+      105deg,
+      rgba(11, 17, 32, 0.96) 0%,
+      rgba(11, 17, 32, 0.9) 38%,
+      rgba(11, 17, 32, 0.62) 62%,
+      rgba(11, 17, 32, 0.35) 100%
+    ),
+    radial-gradient(circle at top right, rgba(56, 189, 248, 0.14), transparent 35%);
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1.2fr 0.8fr;
   gap: 2rem;
-  align-items: start;
+  align-items: center;
 }
 
 .hero-side {
@@ -183,11 +208,6 @@ img {
   max-width: 360px;
   width: 100%;
   justify-self: end;
-}
-
-.hero-side .profile-photo-wrap {
-  max-width: 320px;
-  width: 100%;
 }
 
 .hero-photo-wrap,
@@ -302,7 +322,8 @@ img {
 }
 
 .hero-card {
-  background: rgba(30, 41, 59, 0.72);
+  background: rgba(30, 41, 59, 0.82);
+  backdrop-filter: blur(12px);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 2rem;
@@ -686,9 +707,15 @@ h2 {
     justify-self: stretch;
   }
 
-  .hero-side .profile-photo-wrap {
-    max-width: 280px;
-    margin-inline: auto;
+  .hero-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(11, 17, 32, 0.94) 0%,
+        rgba(11, 17, 32, 0.88) 55%,
+        rgba(11, 17, 32, 0.72) 100%
+      ),
+      radial-gradient(circle at top right, rgba(56, 189, 248, 0.12), transparent 35%);
   }
 
   .about-intro .profile-photo-wrap {
