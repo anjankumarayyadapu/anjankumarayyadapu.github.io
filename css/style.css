@@ -126,19 +126,37 @@ img {
   gap: 1.25rem;
 }
 
-.hero-photo-wrap {
+.hero-photo-wrap,
+.profile-photo-wrap {
   padding: 0.35rem;
   border-radius: calc(var(--radius) + 4px);
   background: linear-gradient(135deg, rgba(56, 189, 248, 0.45), rgba(14, 165, 233, 0.12));
   box-shadow: var(--shadow);
 }
 
-.hero-photo {
+.hero-photo,
+.profile-photo {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: var(--radius);
   border: 1px solid var(--border);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.75fr) 1.25fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.about-intro .profile-photo-wrap {
+  max-width: 280px;
+  margin-bottom: 1.5rem;
+}
+
+.about-intro h2 {
+  margin-bottom: 1rem;
 }
 
 .eyebrow {
@@ -550,12 +568,17 @@ h2 {
 
 @media (max-width: 900px) {
   .hero-grid,
+  .about-grid,
   .split,
   .skills-grid,
   .projects-grid,
   .contact-grid,
   .articles-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-intro .profile-photo-wrap {
+    max-width: 100%;
   }
 
   .publication-item {
