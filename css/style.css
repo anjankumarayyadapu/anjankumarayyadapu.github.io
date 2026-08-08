@@ -650,6 +650,17 @@ h2 {
   border-radius: calc(var(--radius) - 4px);
 }
 
+.volunteer-gallery-single {
+  grid-template-columns: 1fr;
+  max-width: 420px;
+}
+
+.volunteer-gallery-single img {
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 .event-card {
   max-width: none;
 }
@@ -897,8 +908,9 @@ h2 {
 
 .media-preview-row {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  max-width: 720px;
   margin-bottom: 1.25rem;
 }
 
@@ -920,7 +932,7 @@ a.media-preview-item:hover {
   font-size: 0.84rem;
   font-weight: 600;
   line-height: 1.35;
-  text-align: center;
+  text-align: left;
   color: var(--text);
 }
 
@@ -1105,10 +1117,6 @@ a.media-preview-item:hover .media-preview-card {
 
   .book-card-media {
     grid-template-columns: 96px 1fr;
-  }
-
-  .media-preview-row {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .media-preview-grid {
