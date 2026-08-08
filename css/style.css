@@ -10,7 +10,7 @@
   --border: rgba(148, 163, 184, 0.16);
   --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
   --radius: 16px;
-  --max-width: 1120px;
+  --max-width: 1680px;
 }
 
 *,
@@ -208,14 +208,14 @@ img {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 280px minmax(0, 1fr);
-  gap: 2.5rem;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 3rem;
   align-items: start;
 }
 
 .about-sidebar .profile-photo-wrap {
   width: 100%;
-  max-width: 280px;
+  max-width: 320px;
   margin-bottom: 1.25rem;
 }
 
