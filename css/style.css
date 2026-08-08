@@ -20,7 +20,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 body {
@@ -29,6 +29,13 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 a {
@@ -86,8 +93,55 @@ img {
   font-weight: 500;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--text);
+}
+
+.nav-links a.active {
+  position: relative;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.35rem;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 999px;
+}
+
+.page-view {
+  display: none;
+  animation: fadeIn 0.25s ease;
+}
+
+.page-view-active {
+  display: block;
+}
+
+.hero.page-view-active {
+  min-height: calc(100vh - 4.5rem);
+  display: flex;
+  align-items: center;
+}
+
+.hero.page-view-active .hero-grid {
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .nav-toggle {
@@ -528,24 +582,62 @@ h2 {
   align-items: start;
 }
 
-.contact-links {
-  display: grid;
-  gap: 0.85rem;
+.contact-notes {
+  margin: 1.5rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--text-muted);
 }
 
-.contact-links a {
-  display: block;
-  padding: 1rem 1.1rem;
-  border-radius: 12px;
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: var(--radius);
   background: var(--surface);
   border: 1px solid var(--border);
-  color: var(--text);
-  font-weight: 500;
 }
 
-.contact-links a:hover {
-  border-color: rgba(56, 189, 248, 0.35);
-  color: var(--accent);
+.form-field {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.form-field label {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: rgba(56, 189, 248, 0.45);
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 8rem;
+}
+
+.contact-honey {
+  display: none;
+}
+
+.contact-form .btn {
+  justify-self: start;
+  margin-top: 0.25rem;
 }
 
 .site-footer {
