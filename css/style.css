@@ -216,6 +216,14 @@ img {
 .about-sidebar .profile-photo-wrap {
   width: 100%;
   max-width: 280px;
+  margin-bottom: 1.25rem;
+}
+
+.about-sidebar .about-lead {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
 }
 
 .about-main {
@@ -226,29 +234,10 @@ img {
   margin: 0 0 1rem;
 }
 
-.about-main .lead,
 .about-main p {
   color: var(--text-muted);
   line-height: 1.75;
   margin: 0 0 1.25rem;
-  max-width: none;
-  text-align: justify;
-  text-align-last: justify;
-  text-justify: inter-word;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-  overflow-wrap: break-word;
-}
-
-.about-main .lead::after,
-.about-main p::after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-}
-
-.about-main .lead {
-  font-size: 1.05rem;
 }
 
 .about-main p:last-of-type {
