@@ -696,6 +696,11 @@ h2 {
   border-radius: calc(var(--radius) - 4px);
 }
 
+.speaking-poster {
+  grid-template-columns: 1fr;
+  max-width: 420px;
+}
+
 @media (min-width: 901px) {
   .featured-blog-card {
     max-width: none;
