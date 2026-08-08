@@ -76,8 +76,11 @@ img {
 
 .nav-logo {
   font-weight: 700;
+  font-size: 0.92rem;
   color: var(--text);
   letter-spacing: -0.02em;
+  line-height: 1.2;
+  max-width: min(14rem, 34vw);
 }
 
 .nav-links {
