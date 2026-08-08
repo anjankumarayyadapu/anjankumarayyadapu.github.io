@@ -60,3 +60,24 @@ window.addEventListener("hashchange", () => {
     setActiveView(viewId);
   }
 });
+
+document.querySelectorAll(".video-preview-play").forEach((button) => {
+  button.addEventListener("click", () => {
+    const wrapper = button.closest(".video-preview");
+    if (!wrapper || wrapper.classList.contains("video-preview-active")) {
+      return;
+    }
+
+    const videoId = wrapper.dataset.videoId;
+    const videoTitle = wrapper.dataset.videoTitle || "YouTube video";
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
+    iframe.title = videoTitle;
+    iframe.allow =
+      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.allowFullscreen = true;
+
+    wrapper.replaceChildren(iframe);
+    wrapper.classList.add("video-preview-active");
+  });
+});

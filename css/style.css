@@ -701,6 +701,71 @@ h2 {
   max-width: 420px;
 }
 
+.video-preview {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 0 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #000;
+}
+
+.video-preview-play {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background: #000;
+}
+
+.video-preview-play img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.video-preview-play::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.18);
+  transition: background 0.2s ease;
+}
+
+.video-preview-play:hover::before,
+.video-preview-play:focus-visible::before {
+  background: rgba(0, 0, 0, 0.38);
+}
+
+.video-preview-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.45));
+  transition: transform 0.2s ease;
+}
+
+.video-preview-play:hover .video-preview-icon,
+.video-preview-play:focus-visible .video-preview-icon {
+  transform: translate(-50%, -50%) scale(1.06);
+}
+
+.video-preview-bg {
+  fill: #f03;
+}
+
+.video-preview-active iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
 @media (min-width: 901px) {
   .featured-blog-card {
     max-width: none;
